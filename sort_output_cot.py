@@ -1,14 +1,14 @@
 import json
 import re
 
-# This file is use to format the output from LlaMa, 
+# This file is use to format the Chain of thought prompting output from LlaMa, 
 # in order to used for further measurement
-# The formatted output will be sorted_answer.json
+# The formatted output will be sorted_answer_cot.json
 
-with open('D:\\UVA\\NLP\\NLP-Tiny-Project\\answers.json', 'r') as answers_file:
+with open('D:\\UVA\\NLP\\NLP-Tiny-Project\\answers_chain-of-thought.json', 'r') as answers_file:
     answers_data = json.load(answers_file)
 sorted_answers = {}
-sorted_file_path = 'D:\\UVA\\NLP\\NLP-Tiny-Project\\sorted_answer.json'
+sorted_file_path = 'D:\\UVA\\NLP\\NLP-Tiny-Project\\sorted_answer_cot.json'
 
 ###############################################################################
 # Sort the responses based on the receipts
